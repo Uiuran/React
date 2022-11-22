@@ -3,11 +3,23 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+
+//const rootRedirect = document.getElementById('redirect-button');
+//const rootButtonRedirect = ReactDOM.createRoot(rootRedirect);
+//rootButtonRedirect.render(React.createElement(RedirectButton));
+
+//const rootNode = document.getElementById('like-button-root');
+//const rootButton = ReactDOM.createRoot(rootNode);
+//rootButton.render(React.createElement(LikeButton));
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <App></App>
+    </ BrowserRouter>
   </React.StrictMode>
 );
 

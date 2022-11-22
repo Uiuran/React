@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { HelloWorld } from './components/hello-world';
+import { LikeButton, RedirectButton } from './button';
+import { HookCounter } from './components/HookCounter'
+import { HookEffectOne } from './components/HookEffectOne';
+import { HookMouse, ToggleButton } from './components/HookMouse';
+import { HookIntervalCounter } from './components/HookIntervalCounter';
+import { DataFetching } from './components/DataFetching';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HelloWorld name='Daniel' surname='Penalva'/>
+      <DataFetching />
+      {/*<LikeButton />     
+      <HookCounter></ HookCounter>
+      <HookEffectOne></HookEffectOne>
+      <HookMouse></HookMouse>
+      <ToggleButton ></ToggleButton>
+  <HookIntervalCounter />*/}
     </div>
   );
 }
